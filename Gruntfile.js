@@ -40,7 +40,6 @@ module.exports = function (grunt) {
 
     // Watches files for changes and runs tasks based on the changed files
     watch: {
-
       styles: {
         options: {
           spawn: false
@@ -261,7 +260,8 @@ module.exports = function (grunt) {
         'cssmin:generated'
       ],
       server: [
-        'less:dev'
+        'less:dev',
+        'less:docs'
       ],
       test: [
         'less:dev'

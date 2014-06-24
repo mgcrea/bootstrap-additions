@@ -1,6 +1,6 @@
 /**
  * bootstrap-additions
- * @version v0.2.2 - 2014-03-17
+ * @version v0.2.3 - 2014-06-24
  * @link https://github.com/mgcrea/bootstrap-additions
  * @author Olivier Louvignes <olivier@mg-crea.com>
  * @license MIT License, http://www.opensource.org/licenses/MIT
@@ -80,15 +80,21 @@
 }
 /*
  * Alerts placement
- *
  */
 .alert.top,
+.alert.top-left,
 .alert.top-right,
-.alert.top-left {
+.alert.bottom,
+.alert.bottom-left,
+.alert.bottom-right {
   position: fixed;
-  top: 50px;
   z-index: 1050;
   margin: 20px;
+}
+.alert.top,
+.alert.top-left,
+.alert.top-right {
+  top: 50px;
 }
 .alert.top {
   right: 0px;
@@ -106,14 +112,38 @@
 .alert.top-left .close {
   padding-right: 10px;
 }
+.alert.bottom,
+.alert.bottom-right,
+.alert.bottom-left {
+  bottom: 0px;
+}
+.alert.bottom {
+  right: 0px;
+  left: 0px;
+}
+.alert.bottom-right {
+  right: 0px;
+}
+.alert.bottom-right .close {
+  padding-left: 10px;
+}
+.alert.bottom-left {
+  left: 0px;
+}
+.alert.bottom-left .close {
+  padding-right: 10px;
+}
+/*
+ * Aside element
+ */
 .aside {
-  z-index: 1049;
-  background: white;
   position: fixed;
-  overflow: auto;
-  min-width: 320px;
   top: 0;
   bottom: 0;
+  z-index: 1049;
+  overflow: auto;
+  min-width: 320px;
+  background: white;
 }
 .aside:focus {
   outline: none;
@@ -124,12 +154,12 @@
   }
 }
 .aside.left {
-  left: 0;
   right: auto;
+  left: 0;
 }
 .aside.right {
-  left: auto;
   right: 0;
+  left: auto;
 }
 .aside .aside-dialog .aside-header {
   padding: 15px;
@@ -140,11 +170,11 @@
   color: white;
 }
 .aside .aside-dialog .aside-header .close {
+  margin-right: -8px;
+  padding: 4px 8px;
   color: white;
   font-size: 25px;
   opacity: .8;
-  padding: 4px 8px;
-  margin-right: -8px;
 }
 .aside .aside-dialog .aside-body {
   position: relative;
@@ -182,10 +212,6 @@
 .aside-backdrop.in {
   opacity: 0.5;
   filter: alpha(opacity=50);
-}
-.aside-backdrop.animation-fade {
-  background: rgba(0, 0, 0, 0.5);
-  opacity: 1;
 }
 /*
  * Callouts

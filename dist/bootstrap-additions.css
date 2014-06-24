@@ -253,6 +253,27 @@
 .callout-info h4 {
   color: #34789a;
 }
+/*
+ * Datepicker element
+ */
+.datepicker.dropdown-menu {
+  width: 250px;
+  height: 270px;
+}
+.datepicker.dropdown-menu button {
+  outline: none;
+  border: 0px;
+}
+.datepicker.dropdown-menu tbody {
+  height: 180px;
+}
+.datepicker.dropdown-menu tbody button {
+  padding: 6px;
+}
+.datepicker.dropdown-menu.datepicker-mode-1 tbody button,
+.datepicker.dropdown-menu.datepicker-mode-2 tbody button {
+  height: 65px;
+}
 .modal.center .modal-dialog {
   position: fixed;
   top: 40%;
@@ -343,6 +364,19 @@
   margin-left: -10px;
   border-top-width: 0;
   border-bottom-color: #ffffff;
+}
+/*
+ * Timepicker element
+ */
+.timepicker.dropdown-menu {
+  padding: 0 4px;
+}
+.timepicker.dropdown-menu button {
+  outline: none;
+  border: 0px;
+}
+.timepicker.dropdown-menu tbody button {
+  padding: 6px;
 }
 /*
  * Fancy tooltips

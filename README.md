@@ -1,4 +1,6 @@
-# [BootstrapAdditions](http://mgcrea.github.io/bootstrap-additions) [![Build Status](https://secure.travis-ci.org/mgcrea/bootstrap-additions.png?branch=master)](http://travis-ci.org/#!/mgcrea/bootstrap-additions) [![Dependency Status](https://gemnasium.com/mgcrea/bootstrap-additions.png)](https://gemnasium.com/mgcrea/bootstrap-additions)
+# [BootstrapAdditions](http://mgcrea.github.io/bootstrap-additions)
+
+[![Bower Version](http://img.shields.io/bower/v/bootstrap-additions.svg?style=flat)](https://github.com/mgcrea/bootstrap-additions/releases) [![Build Status](http://img.shields.io/travis/mgcrea/bootstrap-additions/master.svg?style=flat)](http://travis-ci.org/mgcrea/bootstrap-additions) [![devDependency Status](http://img.shields.io/david/dev/mgcrea/bootstrap-additions.svg?style=flat)](https://david-dm.org/mgcrea/bootstrap-additions#info=devDependencies)
 
 [![Banner](http://mgcrea.github.io/bootstrap-additions/images/snippet.png)](http://mgcrea.github.io/bootstrap-additions)
 
@@ -12,42 +14,54 @@ It's a spin off from [AngularStrap](http://mgcrea.github.io/angular-strap) v2 re
 + Check the [documentation](http://mgcrea.github.io/bootstrap-additions) and [changelog](https://github.com/mgcrea/bootstrap-additions/releases).
 
 
+## Communication
+
+- If you **need help**, use [Stack Overflow](http://stackoverflow.com/questions/tagged/angular-strap).
+- If you'd like to **ask a general question**, use [Stack Overflow](http://stackoverflow.com/questions/tagged/angular-strap).
+- If you **found a bug**, open an issue.
+- If you **have a feature request**, open an issue.
+- If you **want to contribute**, submit a pull request.
+
+
 ## Quick start
 
-+ Include the required libraries (cdn/local)
++ Install BootstrapAdditions with [Bower](https://github.com/bower/bower).
+
+>
+```bash
+$ bower install bootstrap-additions --save
+```
+
++ Include the required libraries is your `index.html`:
 
 >
 ``` html
-<link rel="stylesheet" href="//rawgithub.com/mgcrea/bootstrap-additions/master/dist/bootstrap-additions.min.css">
+<link rel="stylesheet" href="bower_components/bootstrap-additions/dist/bootstrap-additions.min.css">
 ```
+
 
 ## Developers
 
 Clone the repo, `git clone git://github.com/mgcrea/bootstrap-additions.git`, [download the latest release](https://github.com/mgcrea/bootstrap-additions/zipball/master) or install with bower `bower install bootstrap-additions --save`.
 
-BootstrapAdditions is tested with `karma` against the latest stable release of AngularJS.
+You can build the latest version using `gulp`.
 
 >
-    $ npm install grunt-cli --global
-    $ npm install --dev
-    $ grunt test
-
-You can build the latest version using `grunt`.
-
->
-    $ grunt build
+```bash
+$ gulp build
+```
 
 You can quickly hack around (the docs) with:
 
 >
-    $ grunt serve
-
+```bash
+$ gulp serve
+```
 
 
 ## Contributing
 
 Please submit all pull requests the against master branch. If your unit test contains JavaScript patches or features, you should include relevant unit tests. Thanks!
-
 
 
 ## Authors
@@ -58,12 +72,11 @@ Please submit all pull requests the against master branch. If your unit test con
 + http://github.com/mgcrea
 
 
-
 ## Copyright and license
 
     The MIT License
 
-    Copyright (c) 2014 Olivier Louvignes
+    Copyright (c) 2014 - 2015 Olivier Louvignes
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal

@@ -3,8 +3,8 @@
   "description": "BootstrapAdditions - CSS extension kit for Twitter Bootstrap 3.0+",
   "version": "0.3.0",
   "keywords": [
-    "angular",
-    "animation"
+    "bootstrap",
+    "additions"
   ],
   "homepage": "https://github.com/mgcrea/bootstrap-additions",
   "bugs": "https://github.com/mgcrea/bootstrap-additions/issues",

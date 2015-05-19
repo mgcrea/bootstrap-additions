@@ -27,9 +27,6 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "bootstrap": ">=3.0.0",
-    "angular-motion": "~0.3.2",
-    "angular-strap": "~2.0.0",
-    "highlightjs": "~8.0.0"
+    "bootstrap": "^3.3.4"
   }
 }

@@ -19,11 +19,17 @@
   },
   "licenses": [
     {
-      "type": "MIT"
+      "type": "MIT",
+      "url": "https://github.com/mgcrea/bootstrap-additions/blob/master/LICENSE.md"
     }
   ],
   "main": [
-    "dist/bootstrap-additions.min.css"
+    "dist/bootstrap-additions.css"
+  ],
+  "ignore": [
+    "docs",
+    "test",
+    "CONTRIBUTING.md"
   ],
   "dependencies": {},
   "devDependencies": {

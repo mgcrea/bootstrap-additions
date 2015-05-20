@@ -1,14 +1,10 @@
 /**
  * bootstrap-additions
- * @version v0.3.0 - 2015-05-19
+ * @version v0.3.1 - 2015-05-20
  * @link https://github.com/mgcrea/bootstrap-additions
  * @author Olivier Louvignes <olivier@mg-crea.com> (https://github.com/mgcrea)
  * @license MIT License, http://www.opensource.org/licenses/MIT
  */
-(function(window, document, undefined) {
-'use strict';
-
-// Source: bootstrap-additions.css
 .thumbnail > img,
 .thumbnail a > img,
 .carousel-inner > .item > img,
@@ -527,7 +523,6 @@
   left: 90%;
 }
 
-// Source: alert/alert.css
 .thumbnail > img,
 .thumbnail a > img,
 .carousel-inner > .item > img,
@@ -660,7 +655,6 @@
   padding-right: 10px;
 }
 
-// Source: aside/aside.css
 .thumbnail > img,
 .thumbnail a > img,
 .carousel-inner > .item > img,
@@ -817,7 +811,101 @@
   filter: alpha(opacity=50);
 }
 
-// Source: callout/callout.css
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.btn-group-lg > .btn {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+.btn-group-sm > .btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.btn-group-xs > .btn {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.dl-horizontal dd:before,
+.dl-horizontal dd:after,
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.form-horizontal .form-group:before,
+.form-horizontal .form-group:after,
+.btn-toolbar:before,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:before,
+.btn-group-vertical > .btn-group:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after,
+.navbar-header:before,
+.navbar-header:after,
+.navbar-collapse:before,
+.navbar-collapse:after,
+.pager:before,
+.pager:after,
+.panel-body:before,
+.panel-body:after,
+.modal-footer:before,
+.modal-footer:after {
+  content: " ";
+  display: table;
+}
+.dl-horizontal dd:after,
+.container:after,
+.container-fluid:after,
+.row:after,
+.form-horizontal .form-group:after,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:after,
+.nav:after,
+.navbar:after,
+.navbar-header:after,
+.navbar-collapse:after,
+.pager:after,
+.panel-body:after,
+.modal-footer:after {
+  clear: both;
+}
+/*
+ * Datepicker element
+ */
+.datepicker.dropdown-menu {
+  width: 250px;
+  height: 270px;
+}
+.datepicker.dropdown-menu button {
+  outline: none;
+  border: 0px;
+}
+.datepicker.dropdown-menu tbody {
+  height: 180px;
+}
+.datepicker.dropdown-menu tbody button {
+  padding: 6px;
+}
+.datepicker.dropdown-menu.datepicker-mode-1 tbody button,
+.datepicker.dropdown-menu.datepicker-mode-2 tbody button {
+  height: 65px;
+}
+
 .thumbnail > img,
 .thumbnail a > img,
 .carousel-inner > .item > img,
@@ -932,103 +1020,6 @@
   color: #34789a;
 }
 
-// Source: datepicker/datepicker.css
-.thumbnail > img,
-.thumbnail a > img,
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-.btn-group-lg > .btn {
-  padding: 10px 16px;
-  font-size: 18px;
-  line-height: 1.3333333;
-  border-radius: 6px;
-}
-.btn-group-sm > .btn {
-  padding: 5px 10px;
-  font-size: 12px;
-  line-height: 1.5;
-  border-radius: 3px;
-}
-.btn-group-xs > .btn {
-  padding: 1px 5px;
-  font-size: 12px;
-  line-height: 1.5;
-  border-radius: 3px;
-}
-.dl-horizontal dd:before,
-.dl-horizontal dd:after,
-.container:before,
-.container:after,
-.container-fluid:before,
-.container-fluid:after,
-.row:before,
-.row:after,
-.form-horizontal .form-group:before,
-.form-horizontal .form-group:after,
-.btn-toolbar:before,
-.btn-toolbar:after,
-.btn-group-vertical > .btn-group:before,
-.btn-group-vertical > .btn-group:after,
-.nav:before,
-.nav:after,
-.navbar:before,
-.navbar:after,
-.navbar-header:before,
-.navbar-header:after,
-.navbar-collapse:before,
-.navbar-collapse:after,
-.pager:before,
-.pager:after,
-.panel-body:before,
-.panel-body:after,
-.modal-footer:before,
-.modal-footer:after {
-  content: " ";
-  display: table;
-}
-.dl-horizontal dd:after,
-.container:after,
-.container-fluid:after,
-.row:after,
-.form-horizontal .form-group:after,
-.btn-toolbar:after,
-.btn-group-vertical > .btn-group:after,
-.nav:after,
-.navbar:after,
-.navbar-header:after,
-.navbar-collapse:after,
-.pager:after,
-.panel-body:after,
-.modal-footer:after {
-  clear: both;
-}
-/*
- * Datepicker element
- */
-.datepicker.dropdown-menu {
-  width: 250px;
-  height: 270px;
-}
-.datepicker.dropdown-menu button {
-  outline: none;
-  border: 0px;
-}
-.datepicker.dropdown-menu tbody {
-  height: 180px;
-}
-.datepicker.dropdown-menu tbody button {
-  padding: 6px;
-}
-.datepicker.dropdown-menu.datepicker-mode-1 tbody button,
-.datepicker.dropdown-menu.datepicker-mode-2 tbody button {
-  height: 65px;
-}
-
-// Source: modal/modal.css
 .thumbnail > img,
 .thumbnail a > img,
 .carousel-inner > .item > img,
@@ -1114,7 +1105,6 @@
           transform: translateX(-50%) translateY(-50%);
 }
 
-// Source: popover/popover.css
 .thumbnail > img,
 .thumbnail a > img,
 .carousel-inner > .item > img,
@@ -1270,7 +1260,6 @@
   border-bottom-color: #ffffff;
 }
 
-// Source: timepicker/timepicker.css
 .thumbnail > img,
 .thumbnail a > img,
 .carousel-inner > .item > img,
@@ -1358,7 +1347,6 @@
   padding: 6px;
 }
 
-// Source: tooltip/tooltip.css
 .thumbnail > img,
 .thumbnail a > img,
 .carousel-inner > .item > img,
@@ -1570,5 +1558,3 @@
   border-bottom-color: #000000;
   left: 90%;
 }
-
-})(window, document);

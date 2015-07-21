@@ -26,10 +26,10 @@
   "dependencies": {},
   "devDependencies": {
     "del": "^1.2.0",
-    "factory-angular-channels": "^0.7.1",
-    "gulp": "gulpjs/gulp#4.0",
-    "ng-factory": "^1.0",
-    "undertaker-lib-tasks": "^0.3.1"
+    "factory-angular-channels": "^0.8.0",
+    "gulp": "git://github.com/gulpjs/gulp.git#4.0",
+    "ng-factory": "^1.0.10",
+    "undertaker-lib-tasks": "^0.3.4"
   },
   "engines": {
     "node": "^0.10"

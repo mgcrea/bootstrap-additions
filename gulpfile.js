@@ -7,6 +7,11 @@ var config = require('ng-factory').use(gulp, {
   },
   bower: {
     exclude: /jquery|js\/bootstrap|\.less/
+  },
+  less: {
+    globalVars: {
+      componentsDir: '\'bower_components/\''
+    }
   }
 });
 
